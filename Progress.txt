@@ -1,0 +1,19 @@
+1) Video 1
+   - install virtualenv
+   - install django, rest_framework, django-rest-knox
+   - start virtualenv
+   - start django project (leadmanager)
+      $ django-admin startproject leadsmanager .   (the dot at the end means creat the project in the current directory)
+   - check python interpretor in vscode (make sure its correct)
+   - start django app (leads)
+      $ python manage.py startapp leads
+   - add leads and rest_framework to the Installed_Apps in project setting.py
+   - create model on leads app
+   - leads app makemigrations and migrate to database
+   - create and write serializer.py file in leads app
+   - create and write api.py file in leads app
+   - edit the leadmanager project urls.py file so as to add the leads app: urls.py file
+   - create and edit urls.py in leads app & use routers from rest_framework
+   - run django development server to test things out
+
+2) Video 2

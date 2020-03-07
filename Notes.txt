@@ -1,0 +1,14 @@
+* activate venv
+	- ./venv/Scripts/activate
+* set the execution policy to unrestricted so as to run scripts on powershell
+	- Set-ExecutionPolicy Unrestricted
+* check rest framework version
+	- python 	(start python shell)
+	- import rest_framework
+	- rest_framework.VERSION
+* to make sure the python interpreter on vscode points to the virtualenv
+	- press Ctrl + Shift + p
+	- type "python: Select Interpreter"
+	- select the one that points to the virtualenv
+* to remove all files from git staging area (be in the root directory)
+	- git reset HEAD -- .
