@@ -1,7 +1,9 @@
-1) Video 1
+1) Video 1: Basic REST API 
    - install virtualenv
    - install django, rest_framework, django-rest-knox
    - start virtualenv
+   - created 'requirement.txt' file for virtualenv packages info and depedencies
+      $ pip freez > requirement.txt
    - start django project (leadmanager)
       $ django-admin startproject leadsmanager .   (the dot at the end means creat the project in the current directory)
    - check python interpretor in vscode (make sure its correct)
@@ -16,4 +18,48 @@
    - create and edit urls.py in leads app & use routers from rest_framework
    - run django development server to test things out
 
-2) Video 2
+2) Video 2: Implementing React
+   - create a new app for react called fontend
+      $ python manage.py startapp frontend
+   - create directories within frontend app for react
+      $ mkdir -p ./frontend/src/components   ('-p' is used to help create subdirectories)
+      $ mkdir -p ./frontend/{static,templates}/frontend  (or if this presente errors use the following ones)
+         >> mkdir -p ./frontend/static/frontend
+         >> mkdir -p ./frontend/templates/frontend
+   - initialize node on root directory and create package.json file
+      $ npm init -y     ('-y' means it will not ask for confimation and say yes to all quieries)
+   - install webpack and webpack-cli
+      $ npm i -D webpack webpack-cli
+   - modified .gitignore to add files to be ignored on git commit, also added node modules
+      $ went to 'gitignore.io' and typed django to get a .gitignore list
+      $ added node_modules to .gitignore
+      $ in the last video u added '/venv/*' to git ignore so as to avoid committing virtualenv files
+   - install babel and depedencies related to it
+      $ npm i -D @babel/core babel-loader @babel/preset-env @babel/preset-react babel-plugin-transform-class-properties
+   - install react, react-dom & prop-types
+      $ npm i react react-dom prop-types
+   - inorder to use the two presets and the plugin create and edit .babelrc file
+   - create and edit webpack.config.js file to setup the babel compiler
+   - edit package.json file to add 'dev' and 'build' options in scripts (remove existing 'test' option)
+   - create and edit index.js file in ./frontend/src
+   - create and edit app.js file in ./frontend/src/components
+   - create and edit index.html in ./frontend/templates/frontend
+      $ here u creat a div with an id of 'app', this is where react gets called or renders
+         >> <div id="app"></div>
+      $ also u include static files from ./frontend/static/frontend to inculde main.js (which will be create when running node)
+         >> {% load static %}
+         >> <script src="{% static 'frontend/main.js' %}" ></script>
+      $ copy link from bootwatch and select Comsmo and create a link tag with it
+      $ copy the scripts for javascript from getbootstrap.com
+   - add frontend app as Installed_Apps in project's setting.py
+   - create index view in frontend/views.py
+   - create and edit urls.py file in frontend app and create mapping for index view
+   - include the frontend/urls in the project urls.py, make sure to include the frontend urls before leads app urls
+   - being in the root directory build react
+      $ npm run dev
+   - create layout directory in /frontend/src/components and create and edit Header.js file
+      $ install ES7 React/Redux .... plugin for VSCode
+      $ go to getbootstrap and get Header code for navbar
+   - include Header.js in App.js found in /frontend/src/components 
+   
+   
