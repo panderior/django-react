@@ -60,6 +60,10 @@
    - create layout directory in /frontend/src/components and create and edit Header.js file
       $ install ES7 React/Redux .... plugin for VSCode
       $ go to getbootstrap and get Header code for navbar
-   - include Header.js in App.js found in /frontend/src/components 
+   - include Header.js in App.js found in /frontend/src/components
+   - run django development server to see the result
+   - now create leads directory in /frontend/src/components and create the following files within
+      $ create and edit the files leads.js, Form.js and Dashboard.js within leads directory mentioned above
+   - include Dashboard in App.js file and use it
    
    

@@ -15,4 +15,4 @@
 * to create a requirement.txt file that holds info abt virtualenv and needed packages
 	- pip freeze > requirement.txt
 * to install the requirements in the requirement.txt file
-	- pip install requirement.txt
+	- pip install -r requirement.txt
