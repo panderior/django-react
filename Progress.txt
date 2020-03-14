@@ -65,5 +65,14 @@
    - now create leads directory in /frontend/src/components and create the following files within
       $ create and edit the files leads.js, Form.js and Dashboard.js within leads directory mentioned above
    - include Dashboard in App.js file and use it
+
+
+3) Video 3: Redux & HTTP
+   - install redux and related packages
+      $ npm i redux react-redux redux-thunk redux-devtools-extension 
+   - when Implementing redux the 1st thing to do is create a store. Thus create and edit store.js file in frontend/src
+   - create a directory called reducers in frontend/src and an index.js file within it
+   - edit App.js in frontend/src/components to inclde store (use Provider)
+   - import leads into reduers/index.js
    
    
