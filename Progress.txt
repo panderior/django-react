@@ -70,9 +70,24 @@
 3) Video 3: Redux & HTTP
    - install redux and related packages
       $ npm i redux react-redux redux-thunk redux-devtools-extension 
+   - Install Redux DevTools extension (plugin) for a browser 
    - when Implementing redux the 1st thing to do is create a store. Thus create and edit store.js file in frontend/src
    - create a directory called reducers in frontend/src and an index.js file within it
    - edit App.js in frontend/src/components to inclde store (use Provider)
+   - import redux and store.js into App.ja found in fontend/src/components
    - import leads into reduers/index.js
+   - create and edit leads.js in frontend/src/reducers
+   - create a directory called actions in fontend/src
+   - create and edit types.js in frontend/src/actions
+   - install axios
+      $ npm i axios
+   - create and edit leads.js file in fontend/src/actions
+   - edit Leads.js in frontend/src/components/leads to use connect soasto communicate with components and display data on webpage
+   - add deleteLead functionality by editing the following files as required
+      $ Leads.js in frontend/src/leads
+      $ leads.ja in frontend/src/actions
+      $ types.js in frontend/src/actions
+      $ leads.js in frontend/src/reducers
+   - to add the addLead functionality edit the above files as well as Form.js in frontend/src/leads
    
-   
+    

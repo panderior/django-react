@@ -16,3 +16,14 @@
 	- pip freeze > requirement.txt
 * to install the requirements in the requirement.txt file
 	- pip install -r requirement.txt
+* to remove a file from github use git rm command
+	- to remove both locally and on remote
+		$ git rm <full_file_name>
+		$ then commit and push
+	- to remove on remote but not locally
+		$ git rm --cached <full_file_name>
+		$ then commit and push
+	- to remove a directory add '-r' tag after git rm
+		$ git rm -r <folder_name>			(to remove from both local and remote)
+		$ git rm -r --cached <folder_name>		(only to remove from remote)
+
