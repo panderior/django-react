@@ -89,5 +89,25 @@
       $ types.js in frontend/src/actions
       $ leads.js in frontend/src/reducers
    - to add the addLead functionality edit the above files as well as Form.js in frontend/src/leads
+
+4) Video 4: Error Handling & Alerts
+   - install packages related to use the react-alert functionality
+      $ npm i react-alert react-alert-template-basic react-transition-group
+   - edit App.js frontend/src/components to include react-alert functionality
+   - create and edit Alerts.js in frontend/src/components/layout
+   - create and edit a new reducer called errors.js in frontend/src/reducers
+   - edit the following files in different directories so as to add error alert functionality
+      $ edit index.js under frontend/src/reducers
+      $ edit leads.js under frontend/src/actions 
+      $ edit types.js under frontend/src/actions
+   - create and edit messages.js under frontend/src/reducers to handle alerts for add and delete leadmanager
+   - to support the above functionality the following files are edited
+      $ types.js in frontend/src/actions
+      $ index.js in frontend/src/reducers
+   - create and edit another messages.js under frontend/src/actions and edit the following files
+      $ leads.js under frontend/src/actions
+      $ Alerts.js under frontend/src/layout
+   - edit Form.js in frontend/src/leads so the form clears after submit
    
+
     
