@@ -108,6 +108,26 @@
       $ leads.js under frontend/src/actions
       $ Alerts.js under frontend/src/layout
    - edit Form.js in frontend/src/leads so the form clears after submit
+
+5) Video 5: Django token authentication
+   - add owner of lead to models in leads app and migrate changes
+   - edit api.py in leads app to change permission and get_queryset functionality
+   - create an action called returnErorrs inside messages.js found in frontend/src/actions
+   - edit leads.js in frontend/src/actions to used the returnErrors action
+   - add knox as installed apps and also set django to use knox_token authentication and run migration
+   - create accounts app to handle registering and logging in users
+      $ python manage.py startapp accounts
+      $ add accounts as Installed_Apps in leadsmanager settings.py
+   - create and edit serializers.py file in accounts app and wrtie a class for
+      $ User serializer
+      $ Register serializer
+   - create and edit api.py file in accounts app and write a class for
+      $ Register API
+   - create and edit urls.py file in accounts app and setup url mapping to handel routing regarding authentication
+   - add Login serializer to serializers.py in accounts app
+   - add Login API to api.py in accounts app and add url mapping in accouts/urls.py
+   - add a get_userAPI in api.py file in accounts app
+   - create logout functionality by using knox_logout view in accounts app urls mapping
    
 
     

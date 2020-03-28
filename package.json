@@ -30,6 +30,8 @@
   "dependencies": {
     "@types/react-alert": "^5.2.0",
     "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "popper.js": "^1.16.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-alert": "^7.0.0",

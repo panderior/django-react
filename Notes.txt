@@ -1,5 +1,6 @@
 * activate venv
-	- ./venv/Scripts/activate
+	- ./venv/Scripts/activate		(on windows)
+	- source /venv/bin/activate	(on linux)
 * set the execution policy to unrestricted so as to run scripts on powershell
 	- Set-ExecutionPolicy Unrestricted
 * check rest framework version
@@ -26,4 +27,9 @@
 	- to remove a directory add '-r' tag after git rm
 		$ git rm -r <folder_name>			(to remove from both local and remote)
 		$ git rm -r --cached <folder_name>		(only to remove from remote)
+* install Postman to test your API by performing various requests (get, post, delete)
+* to install all dependencies related to node packages run npm and type install
+	- npm install
+
+	
 
