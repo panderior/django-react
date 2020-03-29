@@ -128,6 +128,26 @@
    - add Login API to api.py in accounts app and add url mapping in accouts/urls.py
    - add a get_userAPI in api.py file in accounts app
    - create logout functionality by using knox_logout view in accounts app urls mapping
-   
 
+6) Video 6: Auth State & Private Routes
+   - install react-router-dom
+      $ npm install react-router-dom
+   - edit App.js in frontend/src/components to include react-router-dom features like
+      $ HashRouter, Route, Switch, Redirect
+   - create a directory called accounts in frontend/src/components and create and edit the following components in it
+      $ Register.js
+      $ Login.js
+   - edit App.js in frontend/src/components to include Login & Register components and create routes for them
+   - edit Header.js in frontend/src/components/layout to create link for Login and Register components
+   - create and edit auth.js in frontend/src/reducers to create an auth reducer
+   - edit index.js in frontend/src/reducers to include auth reducer
+   - create a directory called common under frontend/src/components to hold any components that don't fit to existing directories
+   - create and edit PrivateRoute.js used to check if a user is authenticated and if not redirect to login page
+   - add the following types to types.js in frontend/src/actions
+      $ USER_LOADING
+      $ USER_LOADED
+      $ AUTH_ERROR
+   - edit auth.js in frontend/src/reducers to include new types
+   - create actions for autherization by creating and editing auth.js file in frontend/src/actions
+   - edit App.js in frontend/src/components to include the auth action 
     

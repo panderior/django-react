@@ -30,6 +30,9 @@
 * install Postman to test your API by performing various requests (get, post, delete)
 * to install all dependencies related to node packages run npm and type install
 	- npm install
+* inorder to use Emmet Abbrevation feature which is built into VsCode add the following to user settings
+	- "emmet.includeLanguages": { "javascript": "html" }
+
 
 	
 
