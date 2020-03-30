@@ -150,4 +150,31 @@
    - edit auth.js in frontend/src/reducers to include new types
    - create actions for autherization by creating and editing auth.js file in frontend/src/actions
    - edit App.js in frontend/src/components to include the auth action 
-    
+
+7) Video 7: frontend authentication
+   - add new types to types.js frontend/src/actions
+      $ LOGIN_SUCCESS, LOGIN_FAIL
+   - add login action to auth.js in frontend/src/actions
+   - edit auth.js in frontend/src/reducers to include login types and handle them
+   - edit Login.js in frontend/src/components/accounts to include login action and call it
+   - add lougout link and functionality by editting the following files
+      $ Header.js in frontend/src/components/layout
+      $ add a LOGOUT_SUCCESS type in types.js in frontend/src/actions
+      $ auth.js in frontend/src/actions and add logout action
+      $ in frontend/src/reducers edit auth.js to handle logout
+      $ once again edit Header.js to include logout action and call
+   - edit Alerts.js in frontend/src/components/layout to handle login errors
+   - edit Header.js in frontend/src/components/layout to username to the header
+   - edit auth.js in frontend/src/actions to optimize it by removing redundent code by creating helper function
+   - edit the following files to add registration functionality
+      $ add REGISTER_SUCCESS & REGISTER_FAIL types to types.js in frontend/src/actions
+      $ add a register action in auth.js in frontend/src/actions
+      $ edit auth.js in frontend/src/reducers to handle REGISTER_SUCCESS & REGISTER_FAIL types
+      $ edit Register.js  in frontend/src/components/accounts to include regster action
+      $ edit Alerts.js in frontend/src/components/layout to handle Password didn't match error
+      $ edit Alerts.js once again to handle username_already_exists error
+   - edit leads.js in frontend/src/actions to pass token to actions related to lead
+
+
+
+                                            DONE :)
